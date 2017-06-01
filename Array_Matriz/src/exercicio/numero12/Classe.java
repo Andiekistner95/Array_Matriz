@@ -13,6 +13,20 @@ public class Classe {
 		teste[0] = true;
 		teste[1] = false;
 		teste[2] = true;
-		
+
+		boolean todostrue = true;
+
+		for (int aux = 0; aux < teste.length; aux++) {
+			for (int aux2 = 0; aux2 < teste.length; aux2++) {
+				if (aux != aux2 && !(teste[aux] || teste[aux2])) {
+					todostrue = false;
+				}
+			}
+		}
+		if (todostrue) {
+			System.out.println("1");
+		} else {
+			System.out.println("2");
+		}
 	}
 }
