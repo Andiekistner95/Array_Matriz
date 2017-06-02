@@ -18,22 +18,32 @@ public class Classe {
 
 		int[][] matriz = new int[3][3];
 
-		matriz[1][0] = 3;
-		matriz[1][1] = 3;
-		matriz[1][2] = 3;
+		matriz[0][0] = 3; 
+		matriz[0][1] = 3;
+		matriz[0][2] = 3;
 
-		matriz[2][0] = 2;
-		matriz[2][1] = 2;
-		matriz[2][2] = 2;
+		matriz[1][0] = 2;
+		matriz[1][1] = 2;
+		matriz[1][2] = 2;
 
-		matriz[3][0] = 1;
-		matriz[3][1] = 1;
-		matriz[3][2] = 1;
+		matriz[2][0] = 1;
+		matriz[2][1] = 1;
+		matriz[2][2] = 1;
+		
+		/*
+		 * matriz[0][0] = 3; 		matriz[0][1] = 3; 		matriz[0][2] = 3;
+
+		   matriz[1][0] = 2;		matriz[1][1] = 2; 		matriz[1][2] = 2;
+
+		   matriz[2][0] = 1; 		matriz[2][1] = 1;	    matriz[2][2] = 1;
+		 */
 
 		int soma;
 
 		for (int aux = 0; aux < matriz.length; aux++) {
-
+			soma = matriz[aux][0] + matriz[aux][1] + matriz[aux][2];
+			System.out.println("soma dos valores da linha " + aux + " :" + soma);
+			soma = 0;
 		}
 	}
 }
